@@ -1,0 +1,86 @@
+# Path related
+dataset_path: data/raw/diabetes.csv
+dataset_cleaned_path: data/processed/raw_dataset.pkl
+train_set_path:
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
+valid_set_path:
+- data/processed/x_valid.pkl
+- data/processed/y_valid.pkl
+test_set_path:
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
+train_feng_set_path:
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
+valid_feng_set_path:
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
+test_feng_set_path:
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+production_model_path: models/production_model.pkl
+ohe_stasiun_path: models/ohe_stasiun.pkl
+le_encoder_path: models/le_encoder.pkl
+training_log_path: log/training_log.json
+
+# Debug related
+print_debug: true
+
+# Colums by data type related
+float_columns:
+- BMI
+- DiabetesPedigreeFunction
+int_columns:
+- Age
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
+- Outcome
+
+# Predictors and label related
+label: Outcome
+predictors:
+- Age
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
+- BMI
+- DiabetesPedigreeFunction
+
+# Range of data related
+range_age:
+- 0
+- 100
+range_pregnancies:
+- 0
+- 20
+range_glucose:
+- 0
+- 250
+range_blood_pressure:
+- 0
+- 200
+range_skin_thickness:
+- 0
+- 100
+range_insulin:
+- 0
+- 900
+range_bmi:
+- 0
+- 100
+range_diabetes_pedigree_function:
+- -2
+- 4
+range_outcome:
+- 0
+- 1
+
+# Splitting related
+test_size: 0.3
+valid_size: 0.5
