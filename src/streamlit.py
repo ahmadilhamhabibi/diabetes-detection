@@ -17,7 +17,7 @@ with st.form(key = "data_form"):
     age = st.number_input(
         label = "1.\tEnter Age Value:",
         min_value = 0,
-        max_value = 10,
+        max_value = 100,
         help = "Value range from 0 to 100"
     )
 
